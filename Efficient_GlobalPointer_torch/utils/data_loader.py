@@ -28,11 +28,12 @@ def load_data(path):
 def load_ICTdata(path):
     D = []
     for d in json.load(open(path)):
-        D.append(d['text'])
+        D.append([d['text']])
         for n in d['node_list']:
             start,end,label = n['start'],n['end'],n['type']
             if start<= end:
                 D[-1].append((start, end, nodetype2id[label]))
+    return D                
 class EntDataset(Dataset):
     def __init__(self, data, tokenizer, istrain=True):
         self.data = data

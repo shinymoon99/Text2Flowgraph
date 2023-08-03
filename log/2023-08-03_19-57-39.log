@@ -1,0 +1,2 @@
+2023-08-03 19:57:46 - train_ICTNE.py[line:96] - INFO: trian_loss:7.493758	 train_f1:0.000321
+2023-08-03 19:57:47 - train_ICTNE.py[line:114] - INFO: EPOCH:0	 EVAL_F1:0.000595	Precision:0.000298	Recall:0.400000	
