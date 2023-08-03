@@ -1,0 +1,3 @@
+[submodule "Efficient_GlobalPointer_torch"]
+	path = Efficient_GlobalPointer_torch
+	url = ./Efficient_GlobalPointer_torch
