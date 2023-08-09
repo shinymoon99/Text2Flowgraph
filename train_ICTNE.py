@@ -3,16 +3,16 @@
 @Auth: Xhw
 @Description: 实体抽取.
 """
-import Efficient_GlobalPointer_torch.utils as utils
-import Efficient_GlobalPointer_torch.models as models
-from utils.data_loader import EntDataset, load_data,load_ICTdata
+
+
+from Efficient_GlobalPointer_torch.utils.data_loader import EntDataset, load_data,load_ICTdata
 from transformers import BertTokenizerFast, BertModel
 from torch.utils.data import DataLoader
 import torch
-from models.GlobalPointer import EffiGlobalPointer, MetricsCalculator
+from Efficient_GlobalPointer_torch.models.GlobalPointer import EffiGlobalPointer, MetricsCalculator
 from tqdm import tqdm
-from utils.logger import logger
-from utils.bert_optimization import BertAdam
+from Efficient_GlobalPointer_torch.utils.logger import logger
+from Efficient_GlobalPointer_torch.utils.bert_optimization import BertAdam
 bert_model_path = '../models/models_roBerta' #RoBert_large 路径
 train_ICT_path = './datasets/ICT_train.json'  #CMeEE 训练集
 eval_ICT_path = './datasets/ICT_dev.json'  #CMeEE 测试集
@@ -48,7 +48,7 @@ def set_optimizer( model, train_steps=None):
                          warmup=0.1,
                          t_total=train_steps)
     return optimizer
-EPOCH = 10
+EPOCH = 1
 optimizer = set_optimizer(model, train_steps= (int(len(ner_train) / BATCH_SIZE) + 1) * EPOCH)
 # optimizer = torch.optim.Adam(model.parameters(), lr=2e-5)
 

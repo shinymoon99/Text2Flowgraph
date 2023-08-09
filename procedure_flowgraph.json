@@ -1,6 +1,6 @@
 [
     {
-      "text": "设备先通过验签所有权凭证后，取出内置华为根二级CA证书，然后对所有者证书进行认证，从而形成完整的信任链，最后使用设备身份证书对Onboarding Information进行签名校验。从设备获取的Onboarding Information中解析出开局文件信息，使用HTTPS连接开局文件服务器，下载开局文件。",
+      "text": "设备先通过验签所有权凭证后，取出内置华为根二级CA证书，然后对所有者证书进行认证，从而形成完整的信任链，最后使用设备身份证书对Onboarding Information进行签名校验。",
       "node_list": [
         {
           "id": "状态_0",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "text": "设备先通过验签所有权凭证后，取出内置华为根二级CA证书，然后对所有者证书进行认证，从而形成完整的信任链，最后使用设备身份证书对Onboarding Information进行签名校验。从设备获取的Onboarding Information中解析出开局文件信息，使用HTTPS连接开局文件服务器，下载开局文件。",
+      "text": "从设备获取的Onboarding Information中解析出开局文件信息，使用HTTPS连接开局文件服务器，下载开局文件。",
       "node_list": [
         {
           "id": "操作_0",

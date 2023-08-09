@@ -8,3 +8,4 @@ with open("./datasets/ICT_train.json","w",encoding="utf-8") as f1:
     json.dump(train_data,f1,ensure_ascii=False)
 with open("./datasets/ICT_dev.json","w",encoding="utf-8") as f2:
     json.dump(eval_data,f2,ensure_ascii=False)
+
